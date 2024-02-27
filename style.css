@@ -2,9 +2,8 @@ body {
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(url); /* Színátmenetes háttér */
+    background-image: url(gibi2.png);
 }
-
 h1, h2, h3 {
     color: #333; 
     text-align: center;
