@@ -2,7 +2,7 @@ body {
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    background-image: url(gibi2.png);
+    background-image: url(nahalo.png);
 }
 
 h1, h2, h3 {
@@ -28,7 +28,7 @@ h3 {
 }
 
 p {
-    color: #666; /* Szürke szöveg */
+    color: black; /* Szürke szöveg */
     line-height: 1.6;
     text-align: center;
 }
@@ -82,7 +82,26 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-.kep{
-    height: auto;
-    width: auto;
+.kep {
+    max-width: 100%; /* A kép maximális szélessége a szülő elemhez képest */
+    height: auto; /* A kép magasságának automatikus beállítása az arányok megtartásához */
+    object-fit: cover; /* Az arányok megtartása és a tartalom kitöltése */
+    margin: 0 auto; /* Kép középre igazítása */
+    display: block; /* Ezzel a blokkba ágyazott elemek középre kerülnek */
+    border: 1px solid #ddd; /* 1px vastag szürke keret minden oldalon */
+}
+/* Oszlopok keretezése, magasságának beállítása és középre igazítása */
+.col-lg-3, .col-md-6 {
+    border: 1px solid blue; /* 1px vastag szürke keret */
+    padding: 10px; /* Távolság az oszlop tartalmától a keretektől */
+    margin-bottom: 20px; /* Alsó margó az oszlopok között */
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Tartalom középre igazítása */
+}
+
+/* Kicsi belső margó a keretek belsejében */
+.col-lg-3 h2, .col-md-6 h2,
+.col-lg-3 p, .col-md-6 p {
+    margin-bottom: 10px; /* Belső margó az elemek között */
 }
