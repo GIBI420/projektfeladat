@@ -1,0 +1,198 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url(nahalo.png);
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    /* Adj hozzá margót a row-hoz mindkét oldalon */
+}
+
+.col-lg-3 {
+    border: 1px solid blue;
+    /* 1px vastag szürke keret */
+    padding: 10px;
+    /* Távolság az oszlop tartalmától a keretektől */
+    margin-bottom: 20px;
+    /* Alsó margó az oszlopok között */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* Tartalom középre igazítása */
+}
+
+
+
+
+
+h1,
+h2,
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+p {
+    color: black;
+    /* Szürke szöveg */
+    line-height: 1.6;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0066ff;
+    /* Világoskék linkek */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff0066;
+    /* Rózsaszín hover esetén */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.kep {
+    max-width: 100%;
+    /* A kép maximális szélessége a szülő elemhez képest */
+    height: auto;
+    /* A kép magasságának automatikus beállítása az arányok megtartásához */
+    object-fit: cover;
+    /* Az arányok megtartása és a tartalom kitöltése */
+    margin: 0 auto;
+    /* Kép középre igazítása */
+    display: block;
+    /* Ezzel a blokkba ágyazott elemek középre kerülnek */
+    border: 1px solid #ddd;
+    /* 1px vastag szürke keret minden oldalon */
+}
+
+/* Oszlopok keretezése, magasságának beállítása és középre igazítása */
+.col-lg-3,
+.col-md-6 {
+    border: 1px solid blue;
+    /* 1px vastag szürke keret */
+    padding: 10px;
+    /* Távolság az oszlop tartalmától a keretektől */
+    margin-bottom: 20px;
+    /* Alsó margó az oszlopok között */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* Tartalom középre igazítása */
+}
+
+/* Kicsi belső margó a keretek belsejében */
+.col-lg-3 h2,
+.col-md-6 h2,
+.col-lg-3 p,
+.col-md-6 p {
+    margin-bottom: 10px;
+    /* Belső margó az elemek között */
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .main-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-menu ul li {
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Tablet és kisebb képernyők */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-lg-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin: 1%;
+    }
+}
+
+/* Kisebb laptopok és nagyobb képernyők */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-lg-3 {
+        flex: 0 0 31%;
+        max-width: 31%;
+        margin: 1%;
+    }
+}
